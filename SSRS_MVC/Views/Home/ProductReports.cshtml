@@ -1,0 +1,21 @@
+﻿@using ReportViewerForMvc
+@{
+    ViewBag.Title = "ProductReports";
+}
+
+@section scripts{
+    <style type="text/css">
+
+        iframe {
+            border-width: 2px;
+            border-style: inset;
+            border-color: initial;
+            border-image: initial;
+            height: 100vh !important;
+        }
+    </style>
+}
+
+
+<h2>ProductReports</h2>
+@Html.ReportViewer(ViewBag.ReportViewer as Microsoft.Reporting.WebForms.ReportViewer)

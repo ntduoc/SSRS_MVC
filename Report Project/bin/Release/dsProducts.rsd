@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>RptDataSource</DataSourceReference>
+      <CommandText>/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [ProductID]
+      ,[Name]
+      ,[ProductNumber]
+      ,[Color]
+      ,[StandardCost]
+      ,[ListPrice]
+      ,[Size]
+      ,[Weight]
+      ,[ProductCategoryID]
+      ,[ProductModelID]
+      ,[SellStartDate]
+      ,[SellEndDate]
+      ,[DiscontinuedDate]
+      ,[ThumbNailPhoto]
+      ,[ThumbnailPhotoFileName]
+      ,[rowguid]
+      ,[ModifiedDate]
+  FROM [AdventureWorksLT2019].[SalesLT].[Product]</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="ProductID">
+        <DataField>ProductID</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Name">
+        <DataField>Name</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ProductNumber">
+        <DataField>ProductNumber</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Color">
+        <DataField>Color</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="StandardCost">
+        <DataField>StandardCost</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="ListPrice">
+        <DataField>ListPrice</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Size">
+        <DataField>Size</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Weight">
+        <DataField>Weight</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="ProductCategoryID">
+        <DataField>ProductCategoryID</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="ProductModelID">
+        <DataField>ProductModelID</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="SellStartDate">
+        <DataField>SellStartDate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="SellEndDate">
+        <DataField>SellEndDate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="DiscontinuedDate">
+        <DataField>DiscontinuedDate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="ThumbNailPhoto">
+        <DataField>ThumbNailPhoto</DataField>
+        <rd:TypeName>System.Byte[]</rd:TypeName>
+      </Field>
+      <Field Name="ThumbnailPhotoFileName">
+        <DataField>ThumbnailPhotoFileName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="rowguid">
+        <DataField>rowguid</DataField>
+        <rd:TypeName>System.Guid</rd:TypeName>
+      </Field>
+      <Field Name="ModifiedDate">
+        <DataField>ModifiedDate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
